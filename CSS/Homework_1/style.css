@@ -1,0 +1,121 @@
+body {
+  border: #ff00;
+  border-top-left-radius: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgb(149, 190, 170) 10%,
+    rgb(198, 211, 140) 100%
+  );
+  margin: 0;
+}
+
+#head1 {
+  background-color: rgb(214, 169, 169);
+  color: #f0f15f;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 34px;
+  font-style: italic;
+  text-align: center;
+  word-spacing: 30px;
+}
+
+#head1.override {
+  color: rgb(155, 15, 15);
+}
+/* div {
+  color: rgb(96, 96, 214);
+  font-style: italic;
+  text-align: left;
+} */
+
+.class_s {
+  color: rgb(44, 110, 55);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 32px;
+  text-align: left;
+}
+
+#id_s {
+  color: rgb(20, 160, 141);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: medium;
+  font-style: bold;
+  font-stretch: semi-expanded;
+  font-weight: bold;
+  text-align: right;
+}
+
+div div {
+  color: #f0f15f;
+  text-align: left;
+}
+
+/* Multiple classes */
+.box {
+  float: left;
+  height: 100px;
+  margin: 0 50px 50px 0;
+  width: 100px;
+}
+
+.red {
+  color: rgb(116, 5, 5);
+  background: pink;
+}
+
+.blue {
+  color: blue;
+  background: light-blue;
+}
+
+.green {
+  color: rgb(62, 196, 62);
+  background: #900;
+}
+
+.border {
+  border: 5px solid black;
+}
+
+.red.border {
+  border-color: #900;
+}
+
+.blue.border {
+  border-color: rgb(34, 34, 160);
+}
+
+.blue.box {
+  color: #900;
+  background: #f0f15f;
+}
+
+/* Code from slides */
+.outer {
+  border-style: double;
+  margin-top: 180px;
+  text-align: left;
+}
+
+.inner + p {
+  background-color: rgb(34, 99, 99);
+  color: rgb(255, 255, 255);
+}
+
+div[class^="test"] {
+  color: rgb(82, 82, 197);
+}
+
+.nthtest:nth-child(even) {
+  background: #f0f15f;
+  color: rgb(117, 67, 92);
+  font-weight: bold;
+}
+
+.nthtest:nth-child(odd) {
+  background: #5f92f1;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+}
