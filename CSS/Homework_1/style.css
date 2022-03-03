@@ -102,3 +102,25 @@ div[class^="test"] {
   color: rgb(0, 0, 0);
   font-style: italic;
 }
+
+/* Child Selector (in this case :first-child pseudoclass) selects all elements that are the children of a specified element */
+section > :first-child {
+  color: red;
+}
+
+/* Adjacent Sibling Selector is used to select an element that is directly after another specific element */
+section + p {
+  background-color: chocolate;
+}
+
+/* General sibling selector selects all elements that are next siblings of specified element */
+div ~ p {
+  background-color: aquamarine;
+}
+
+/* Pseudo element  can be used to change style of specific elements in line, words etc*/
+.nthtest::first-letter {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5rem;
+}
