@@ -61,38 +61,21 @@ div div {
 }
 
 .red {
-  color: rgb(116, 5, 5);
-  background: pink;
+  background: rgb(233, 5, 43);
 }
 
 .blue {
-  color: blue;
-  background: light-blue;
+  background: rgb(9, 9, 211);
 }
 
 .green {
-  color: rgb(62, 196, 62);
-  background: #900;
+  background: rgb(1, 117, 36);
 }
 
 .border {
   border: 5px solid black;
 }
 
-.red.border {
-  border-color: #900;
-}
-
-.blue.border {
-  border-color: rgb(34, 34, 160);
-}
-
-.blue.box {
-  color: #900;
-  background: #f0f15f;
-}
-
-/* Code from slides */
 .outer {
   border-style: double;
   margin-top: 180px;
@@ -105,7 +88,7 @@ div div {
 }
 
 div[class^="test"] {
-  color: rgb(82, 82, 197);
+  color: rgb(37, 37, 177);
 }
 
 .nthtest:nth-child(even) {
