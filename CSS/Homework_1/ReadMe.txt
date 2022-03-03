@@ -1,7 +1,7 @@
 Homework_1
 
-Trying out CSS selectors:
+CSS tryouts:
 
-Tag/Id/Class/Attribute/Pseudoclass
+Styling Tag/Id/Class/Attribute/Pseudoclass/Pseudoelement
 
-*To be updated*
+
