@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  font-size: 10px;
+}
+
+.grid-container {
+  display: grid;
+  column-gap: 1rem;
+  background-color: rgb(41, 117, 250);
+  /* why obsolete, why avoid it? */
+  grid-column-gap: 0;
+  grid-template-areas:
+    "item-1 item-1 item-1 item-1"
+    "item-2 item-3 item-4 item-5"
+    "item-6 item-6 item-6 item-6";
+}
+.findus_top {
+  padding-top: 0.5rem;
+  padding-bottom: 0.2rem;
+}
+
+.headings_abtmenu {
+  margin-bottom: 0.5rem;
+}
+
+.a_space {
+  margin: 0.25rem;
+}
+
+/* setting for links not to change color after usage */
+.about_menu,
+.about_menu :link,
+.about_menu :visited,
+.about_menu :hover,
+.about_menu :focus,
+.about_menu :active,
+.a_icon {
+  color: #ffff;
+  text-decoration: none;
+}
+.item-1 {
+  grid-area: item-1;
+  text-align: center;
+  justify-content: center;
+}
+
+.item-2,
+.item-3,
+.item-4,
+.item-5 {
+  grid-area: item-2 item-3 item-4 item-5;
+  text-align: center;
+  border-top: 1px solid rgba(37, 106, 226, 255);
+  border-bottom: 1px solid rgba(37, 106, 226, 255);
+  padding: 1rem;
+}
+
+.item-6 {
+  grid-area: item-6;
+  text-align: center;
+  padding: 0.6rem;
+}
+
+i {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+a + a {
+  padding-left: 0.35rem;
+}
