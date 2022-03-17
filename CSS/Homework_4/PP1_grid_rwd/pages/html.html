@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="title" content="Web development blog for beginners + useful tricks and tips!">
+    <meta property="description" content="Learn web development with HTML, CSS, JavaScript, PHP. Useful tips and tricks for beginners.">
+	<link rel="canonical" href="https://nedaskisi.github.io/BIT_PP1/pages/html.html">
+
+	<meta property="og:title" content="Web development blog for beginners + useful tricks and tips!">
+	<meta property="og:description" content="Learn web development with HTML, CSS, JavaScript, PHP. Useful tips and tricks for beginners.">
+	<meta property="og:image" content="https://i.imgur.com/cLE1Rx9.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Web development blog for beginners + useful tricks and tips!">
+	<meta name="twitter:image" content="https://i.imgur.com/cLE1Rx9.png">
+    <meta name="twitter:description" content="Learn web development with HTML, CSS, JavaScript, PHP. Useful tips and tricks for beginners.">
+    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1F28F6G66X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1F28F6G66X');
+</script>
+
+    
+    <title>HTML-learn how to</title>
+</head>
+    <div class="grid-container">
+      <header>
+        <div class="nav_container">
+          <nav class="nav2">
+           <a href="../index.html">Home</a>
+           <a class="active" href="html.html">HTML</a>
+           <a href="css.html">CSS</a>
+           <a href="js.html">JavaScript</a>
+           <a href="php.html">PHP</a>
+          </nav>
+        </div>
+     <div class="sizing_img">
+       <img src="../images/html.jpg" alt="HTML logo" class="center"/>
+     </div>
+     <div>
+        <h2>HTML</h2>
+     </div>
+    </header>
+<article>
+    <h3>HTML Basics</h3>
+    <div>
+    <p class="paragraph">
+    <strong>HTML (HyperText Markup Language)</strong> is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+    </p>
+   </div>
+   <div>
+    <p class="paragraph">
+    For starters we need to have a simple web application. To do that we can either do it by hand or use Emmet Abbreviation to fill it in for us (using IDE like VS CODE by typing ! or !!!):
+    </p>
+  </div>
+  <div>
+    <div class="paragraph">
+     <div>&lt;!DOCTYPE html&gt;</div>
+     <div>&lt;html lang=&quot;en&quot;&gt;</div>
+     <div>&lt;head&gt;</div>
+     <div>&lt;meta charset=&quot;UTF-8&quot;&gt;</div>
+     <div>&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</div>
+     <div>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&  gt; </div>
+     <div>&lt;title&gt;Document&lt;/title&gt;</div>
+     <div>&lt;/head&gt;</div>
+     <div>&lt;body&gt;</div>
+     <div>&lt;p&gt;</div>    
+     <div>&lt;/p&gt;</div>
+     <div>&lt;/body&gt;</div>
+     <div>&lt;/html&gt;</div>
+    </div>
+  </div>
+  <div>
+    <div class="paragraph">
+    <p class="props"> Explanation of basic tags:</p>
+    <ul class="explanatory">
+      <li>The <strong>&lt;!DOCTYPE html&gt;</strong> declaration defines that this document is an HTML5 document.</li>
+      <li>The <strong>&lt;html&gt;</strong> element is the root element of an HTML page.</li>
+      <li>The <strong>&lt;head&gt;</strong> element contains meta information about the HTML page.</li>
+      <li>The <strong>&lt;title&gt;</strong> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).</li>
+      <li>The <strong>&lt;body&gt;</strong> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+      <li>The <strong>&lt;h1&gt;</strong> to <strong>&lt;h6&gt;</strong> elements define heading from largest-h1 to smallest-h6.</li>
+      <li>The <strong>&lt;p&gt;</strong> element defines a paragraph for text, lists, etc.</li>
+      <li>The <strong>&lt;br&gt;</strong> element defines page break (new line).</li>
+      <li>The <strong>&lt;hr&gt;</strong> element defines horizontal line.</li>
+    </ul>
+    </div>
+  </div>
+    <div>
+        <div class="paragraph">
+        <p class="props">We can include pictures using example code below:</p>
+        <div class="spacing">&lt;img src=&quot;<b>path to image file or link to image (if hosted online), has to end with image type (jpeg, jpg, png, etc)</b>&quot; alt=&quot;<b>text version of picture in case it does not load</b>&quot;/&gt;</div>
+        <div class="spacing">I.E. &lt;img src=&quot;<b>https://i.imgur.com/Blzt3qG.png</b>&quot; alt=&quot;<b>Programmer next to pc</b>&quot;/&gt;</div>
+        </div>
+    </div>
+    <div class="marg800">
+        <p class="props">We can also use unordered / ordered lists:</p>
+    </div>
+    <div>
+     <div class="paragraph">
+      <p class="props">Unordered list example:</p>
+        <ul>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+        </ul>
+    <div class="spacing"></div>
+      </div>
+    </div>
+  <div>
+    <div class="paragraph">
+      <p class="props">Code:</p>
+        <div class="leftt">&lt;ul&gt;</div>
+        <div class="leftt">&lt;li&gt;First&lt;/li&gt;</div>
+        <div class="leftt">&lt;li&gt;Second&lt;/li&gt;</div>
+        <div class="leftt">&lt;li&gt;Third&lt;/li&gt;</div>
+        <div class="leftt">&lt;li&gt;Fourth&lt;/li&gt;</div>
+        <div class="leftt spacing">&lt;/ul&gt;</div>
+    </div>
+  </div>
+  <div>
+    <div class="spacing"></div>
+    <div class="paragraph">
+    <p class="props">Ordered list example:</p>
+      <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+    </ol>
+    </div>
+  </div>
+  <div> 
+    <div class="paragraph">
+    <p class="props"><strong>Code:</strong>
+      <div class="leftt">&lt;ol&gt;</div>
+      <div class="leftt">&lt;li&gt;First&lt;/li&gt;</div>
+      <div class="leftt">&lt;li&gt;Second&lt;/li&gt;</div>
+      <div class="leftt">&lt;li&gt;Third&lt;/li&gt;</div>
+      <div class="leftt">&lt;li&gt;Fourth&lt;/li&gt;</div>
+      <div class="leftt">&lt;/ol&gt;</div>
+    </div>
+  </div>
+  <div>  
+    <div class="paragraph">
+      <p class="props">Tags used for list:</p>
+      <ul>
+          <li>The <strong>&lt;ul&gt;</strong>  start of unordered list. </li>
+          <li>The <strong>&lt;ol&gt;</strong>  start of ordered list.</li>
+          <li>The <strong>&lt;li&gt;</strong> states each list item, must be in between <strong>&lt;ul&gt;</strong> or  <strong>&lt;ol&gt;</strong> tags.</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="paragraph">
+    <p class="props">Tables in html code example:</p>
+    <div>&lt;table&gt;</div>
+      <div>&lt;tr&gt;</div>
+        <div>&lt;th&gt;Number&lt;/th&gt;</div>
+        <div>&lt;th&gt;Name&lt;/th&gt;</div>
+        <div>&lt;th&gt;Surname&lt;/th&gt;</div>
+      <div>&lt;/tr&gt;</div>
+      <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;1 &lt;/td&gt;</div>
+        <div>&lt;td&gt;Jon&lt;/td&gt;</div>
+        <div>&lt;td&gt;Doe&lt;/td&gt;</div>
+      <div>&lt;/tr&gt;</div>
+      <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;2&lt;/td&gt;</div>
+        <div>&lt;td&gt;Joa&lt;/td&gt;</div>
+        <div>&lt;td&gt;Doe&lt;/td&gt;</div>
+      <div>&lt;/tr&gt;</div>
+      <div>&lt;tr&gt;</div>
+        <div>&lt;td&gt;3&lt;/td&gt;</div>
+        <div>&lt;td&gt;Jen&lt;/td&gt;</div>
+        <div>&lt;td&gt;Doe&lt;/td&gt;</div>
+      <div>&lt;/tr&gt;</div>
+    <div>&lt;/table&gt;</div>
+    </div>
+  </div>
+  <div>
+    <div class="paragraph">
+    <p class="props">Example of table (how it looks like on a website):</p>
+    <table>
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Surname</th>
+        </tr>
+        <tr>
+          <td>1 </td>
+          <td>Jon</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Joa</td>
+          <td>Doe</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jen</td>
+            <td>Doe</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+  <div>
+    <div class="paragraph">
+      <p class="props">Tags used for table:</p>
+        <ul>
+            <li>The <strong>&lt;table&gt;</strong>  defines <strong>table</strong> tag. </li>
+            <li>The <strong>&lt;th&gt;</strong>  defines <strong>table head</strong> (top of table, name of lists).</li>
+            <li>The <strong>&lt;tr&gt;</strong> defines <strong>table row</strong>. </li>
+            <li>The <strong>&lt;td&gt;</strong> defines <strong>table data</strong> (in this case numbers,names,  surnames).</li>
+        </ul>
+    </div>
+  </div>
+</article>
+<footer>PP1 2022-02 &copy; own project.</footer>
+</body>
+</html>
